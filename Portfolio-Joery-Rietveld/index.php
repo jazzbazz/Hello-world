@@ -8,13 +8,13 @@
     <meta name="robots" content="index, follow">
     <meta name="author" content="Joery Rietveld">
 
+    <title>Jrwebdesign, junior front-end developer die ook SEO service aanbied.</title>
+
     <link rel="stylesheet" href="vendors/css/normalize.css">
     <link rel="stylesheet" href="vendors/css/grid.css">
     <link rel="stylesheet" href="vendors/css/ionicons.min.css">
     <link rel="stylesheet" href="resources/css/style.css">
     <link rel="stylesheet" href="resources/css/queries.css">
-
-    <title>Jrwebdesign, junior front-end developer die ook SEO service aanbied.</title>
 
     <link rel="apple-touch-icon" sizes="180x180" href="/resources/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/resources/favicons/favicon-32x32.png">
@@ -42,10 +42,13 @@
             </div>
         </nav>
         <div class="hero-text-box">
-            <h1>Joery Rietveld<br>Junior front-end developer</h1>
-            <p>Websites bouwen is een passie, van éénmanszaken tot KMO's. Let's create stunning websites together.</p>
-            <a href="#" class="btn btn-full js--scroll-to-service">Website nodig</a>
-            <a href="#" class="btn btn-ghost js--scroll-to-contact">Contacteer mij</a>
+            <h1 class="heading-primary">
+                <span class="heading-primary-main">Joery Rietveld</span>
+                <span class="heading-primary-sub">Junior front-end developer</span>
+                <p class="heading-p">Websites bouwen is een passie, van éénmanszaken tot KMO's. Let's create stunning websites together.</p>
+            </h1>
+            <a href="#" class="btn btn-full btn-animated js--scroll-to-service">Website nodig</a>
+            <a href="#" class="btn btn-ghost btn-animated js--scroll-to-contact">Contacteer mij</a>
         </div>
     </header>
 

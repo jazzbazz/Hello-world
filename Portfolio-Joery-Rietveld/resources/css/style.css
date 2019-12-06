@@ -41,19 +41,67 @@ section{
 
 /* ----- Headings ----- */
 
-h1{
+.heading-primary{
     font-weight: 400;
-    text-transform: uppercase;  
+    text-transform: uppercase; 
+    color: #fff;
+ 
 }
 
-h1{
+.heading-primary-main{
+    display: block;
     margin-top: 0;
-    margin-bottom: 20px;
-    color: #fff;
-    font-size: 240%;
+    margin-bottom: 10px;
+    font-size: 170%;
     word-spacing: 4px;
     letter-spacing: 1px;
+
+    animation: moveInLeft 1s ease-out;
 }
+
+.heading-primary-sub{
+    display: block;
+    font-size: 90%;
+    margin-bottom: 20px;
+
+    animation: moveInRight 1s ease-out;    
+}
+
+@keyframes moveInLeft{
+    0% {
+        opacity: 0;
+
+        /* negative = from left to right */
+        transform: translateX(-100px);
+    }
+
+    80%{
+        /* positive = right to left */
+        transform: translateX(10px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight{
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    80%{
+        transform: translateX(-10px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
 
 h2{
     font-size: 180%;
@@ -83,13 +131,19 @@ h3{
 
 /* ----- Paraghraphs ----- */
 
-.hero-text-box p{
+.heading-p{
     margin-top: 0;
     margin-bottom: 40px;
     color: #fff;
-    font-size: 100%;
+    font-size: 50%;
+    font-weight: 300;
+    text-transform: none;
     word-spacing: 4px;
     letter-spacing: 1px;
+
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
 }
 
 .long-copy{
@@ -163,6 +217,23 @@ input[type=submit]:active{
 .btn-ghost:active{
     border: 1px solid #ec5c26;
     color: #fff
+}
+
+.btn-animated{
+    animation: moveInBottom .5s ease-out 0.25s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom{
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
 }
 
 

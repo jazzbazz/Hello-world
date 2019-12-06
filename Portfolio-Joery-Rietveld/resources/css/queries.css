@@ -67,7 +67,8 @@
     .sticky .mobile-nav-icon{margin-top: 10px;}
     .sticky .mobile-nav-icon i{color: #555;}
 
-    h1{font-size: 180%;}
+    .heading-primary-main{font-size: 150%;}
+    .heading-primary-sub{font-size: 70%;}
     h2{font-size: 150%;}
 
     .long-copy{
